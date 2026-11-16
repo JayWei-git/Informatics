@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "feature_names": ["area", "bedrooms", "age"],
+  "target_name": "price",
+  "samples": [
+    {
+      "features": [120.5, 3.0, 10.0],
+      "target": 350.0
+    },
+    {
+      "features": [85.0, 2.0, 5.0],
+      "target": 260.5
+    },
+    {
+      "features": [150.2, 4.0, 1.5],
+      "target": 480.0
+    }
+  ]
+}

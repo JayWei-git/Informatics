@@ -1,0 +1,32 @@
+# Existing projects and reference material
+/Projects/
+Books/
+*.pdf
+
+# Downloaded software and generated build files
+/System/Ripes-v2.2.6-win-x86_64/
+build/
+build-local/
+CMakeFiles/
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.exe
+*.class
+*.pyc
+__pycache__/
+
+# Syncthing state and temporary files
+.stfolder/
+.stversions/
+.stignore
+~$*
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
+*.temp
+*.crdownload
+*.part

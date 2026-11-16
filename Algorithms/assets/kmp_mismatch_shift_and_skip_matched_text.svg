@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1038.24pt" height="479pt" viewBox="0 0 1038.24 479" version="1.1"><title>KMP 失配后滑动 Pattern 并跳过已匹配区段</title><desc>上图展示失配后根据 next[p2] 移动 Pattern；下图展示移动后可以直接跳过的已匹配 Text 区段</desc><rect width="1038.24" height="479" fill="white" /><svg x="0" y="0" width="1038.24" height="245" viewBox="0 25 1038.24 245" overflow="hidden"><defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="shift_figure_1">
+  <g id="shift_patch_1">
+   <path d="M 0 279.36  L 1038.24 279.36  L 1038.24 0  L 0 0  z " style="fill: #ffffff" />
+  </g>
+  <g id="shift_axes_1">
+   <g id="shift_patch_2">
+    <path d="M 149.04 96.48  L 419.04 96.48  Q 424.08 96.48 424.08 101.52  L 424.08 125.28  Q 424.08 130.32 419.04 130.32  L 149.04 130.32  Q 144 130.32 144 125.28  L 144 101.52  Q 144 96.48 149.04 96.48  z " clip-path="url(#shift_pd590fff7af)" style="fill: #f5f7f8; stroke: #607487; stroke-width: 1.45; stroke-linejoin: miter" />
+   </g>
+   <g id="shift_patch_3">
+    <path d="M 208.8 165.6  L 419.04 165.6  Q 424.08 165.6 424.08 170.64  L 424.08 194.4  Q 424.08 199.44 419.04 199.44  L 208.8 199.44  Q 203.76 199.44 203.76 194.4  L 203.76 170.64  Q 203.76 165.6 208.8 165.6  z " clip-path="url(#shift_pd590fff7af)" style="fill: #f5f7f8; stroke: #607487; stroke-width: 1.45; stroke-linejoin: miter" />
+   </g>
+   <g id="shift_patch_4">
+    <path d="M 617.76 96.48  L 887.76 96.48  Q 892.8 96.48 892.8 101.52  L 892.8 125.28  Q 892.8 130.32 887.76 130.32  L 617.76 130.32  Q 612.72 130.32 612.72 125.28  L 612.72 101.52  Q 612.72 96.48 617.76 96.48  z " clip-path="url(#shift_pd590fff7af)" style="fill: #f5f7f8; stroke: #607487; stroke-width: 1.45; stroke-linejoin: miter" />
+   </g>
+   <g id="shift_patch_5">
+    <path d="M 774.72 167.04  L 984.24 167.04  Q 989.28 167.04 989.28 172.08  L 989.28 195.84  Q 989.28 200.88 984.24 200.88  L 774.72 200.88  Q 769.68 200.88 769.68 195.84  L 769.68 172.08  Q 769.68 167.04 774.72 167.04  z " clip-path="url(#shift_pd590fff7af)" style="fill: #f5f7f8; stroke: #607487; stroke-width: 1.45; stroke-linejoin: miter" />
+   </g>
+   <g id="shift_text_1">
+    <text style="font-size: 25px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202830" x="93.6" y="122.285937" transform="rotate(-0 93.6 122.285937)">Text:</text>
+   </g>
+   <g id="shift_text_2">
+    <text style="font-size: 25px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202830" x="92.16" y="191.405937" transform="rotate(-0 92.16 191.405937)">Pattern:</text>
+   </g>
+   <g id="shift_line2d_1">
+    <path d="M 203.76 78.48  L 203.76 72  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke: #3d9638; stroke-width: 2; stroke-linecap: round" />
+   </g>
+   <g id="shift_line2d_2">
+    <path d="M 203.76 72  L 424.08 72  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke: #3d9638; stroke-width: 2; stroke-linecap: round" />
+   </g>
+   <g id="shift_line2d_3">
+    <path d="M 424.08 72  L 424.08 78.48  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke: #3d9638; stroke-width: 2; stroke-linecap: round" />
+   </g>
+   <g id="shift_line2d_4">
+    <path d="M 313.92 66.24  L 313.92 72  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke: #3d9638; stroke-width: 2; stroke-linecap: round" />
+   </g>
+   <g id="shift_text_3">
+    <text style="font-size: 16px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #3d9638" x="313.92" y="55.655" transform="rotate(-0 313.92 55.655)">已匹配</text>
+   </g>
+   <g id="shift_text_4">
+    <text style="font-size: 10.5px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #202830" x="421.2" y="123.489258" transform="rotate(-0 421.2 123.489258)">显然Text中这一段与prefix/suffix相等</text>
+   </g>
+   <g id="shift_text_5">
+    <text style="font-size: 16px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #c84b31" x="263.52" y="191.84" transform="rotate(-0 263.52 191.84)">prefix</text>
+   </g>
+   <g id="shift_text_6">
+    <text style="font-size: 16px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #1e5f74" x="367.2" y="185.975" transform="rotate(-0 367.2 185.975)">suffix</text>
+   </g>
+   <g id="shift_line2d_5">
+    <path d="M 436.32 90.72  L 436.32 210.24  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke-dasharray: 6.4,6.4; stroke-dashoffset: 0; stroke: #202830; stroke-width: 1.6" />
+   </g>
+   <g id="shift_text_7">
+    <text style="font-size: 23px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #c84b31" x="436.32" y="80.679062" transform="rotate(-0 436.32 80.679062)">X</text>
+   </g>
+   <g id="shift_text_8">
+    <text style="font-size: 11.5px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #c84b31" x="436.32" y="42.859531" transform="rotate(-0 436.32 42.859531)">该字符未</text>
+   </g>
+   <g id="shift_text_9">
+    <text style="font-size: 11.5px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #c84b31" x="436.32" y="55.819531" transform="rotate(-0 436.32 55.819531)">匹配成功</text>
+   </g>
+   <g id="shift_text_10">
+    <text style="font-size: 14px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202830" x="439.2" y="242.288125" transform="rotate(-0 439.2 242.288125)">p2</text>
+   </g>
+   <g id="shift_text_11">
+    <text style="font-size: 14px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202830" x="327.6" y="243.008125" transform="rotate(-0 327.6 243.008125)">next[p2]</text>
+   </g>
+   <g id="shift_text_12">
+    <text style="font-size: 11.5px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202830" x="529.92" y="140.059531" transform="rotate(-0 529.92 140.059531)">Pattern向前滑动</text>
+   </g>
+   <g id="shift_text_13">
+    <text style="font-size: 11.5px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202830" x="529.92" y="169.12457" transform="rotate(-0 529.92 169.12457)">P2 向后滑动到next[p2]</text>
+   </g>
+   <g id="shift_line2d_6">
+    <path d="M 769.68 83.52  L 769.68 77.04  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke: #3d9638; stroke-width: 2; stroke-linecap: round" />
+   </g>
+   <g id="shift_line2d_7">
+    <path d="M 769.68 77.04  L 891.36 77.04  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke: #3d9638; stroke-width: 2; stroke-linecap: round" />
+   </g>
+   <g id="shift_line2d_8">
+    <path d="M 891.36 77.04  L 891.36 83.52  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke: #3d9638; stroke-width: 2; stroke-linecap: round" />
+   </g>
+   <g id="shift_line2d_9">
+    <path d="M 830.16 71.28  L 830.16 77.04  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke: #3d9638; stroke-width: 2; stroke-linecap: round" />
+   </g>
+   <g id="shift_text_14">
+    <text style="font-size: 16px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #3d9638" x="830.16" y="60.695" transform="rotate(-0 830.16 60.695)">已匹配</text>
+   </g>
+   <g id="shift_text_15">
+    <text style="font-size: 16px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #c84b31" x="829.44" y="192.56" transform="rotate(-0 829.44 192.56)">prefix</text>
+   </g>
+   <g id="shift_text_16">
+    <text style="font-size: 16px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #1e5f74" x="933.12" y="185.975" transform="rotate(-0 933.12 185.975)">suffix</text>
+   </g>
+   <g id="shift_line2d_10">
+    <path d="M 897.12 90.72  L 897.12 210.96  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke-dasharray: 6.4,6.4; stroke-dashoffset: 0; stroke: #202830; stroke-width: 1.6" />
+   </g>
+   <g id="shift_text_17">
+    <text style="font-size: 14px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #202830" x="901.44" y="253.088125" transform="rotate(-0 901.44 253.088125)">p2</text>
+   </g>
+   <g id="shift_patch_6">
+    <path d="M 301.68 106.56  Q 362.88 106.56 422.067539 106.56  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+    <path d="M 416.867539 103.96  L 422.067539 106.56  L 416.867539 109.16  z " clip-path="url(#shift_pd590fff7af)" style="fill: #202830; stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+   </g>
+   <g id="shift_patch_7">
+    <path d="M 203.76 172.8  Q 265.32 172.8 324.532129 172.8  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke: #c84b31; stroke-width: 2.1; stroke-linecap: round" />
+    <path d="M 319.332129 170.2  L 324.532129 172.8  L 319.332129 175.4  z " clip-path="url(#shift_pd590fff7af)" style="fill: #c84b31; stroke: #c84b31; stroke-width: 2.1; stroke-linecap: round" />
+   </g>
+   <g id="shift_patch_8">
+    <path d="M 300.96 190.8  Q 362.52 190.8 421.732129 190.8  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke: #1e5f74; stroke-width: 2.1; stroke-linecap: round" />
+    <path d="M 416.532129 188.2  L 421.732129 190.8  L 416.532129 193.4  z " clip-path="url(#shift_pd590fff7af)" style="fill: #1e5f74; stroke: #1e5f74; stroke-width: 2.1; stroke-linecap: round" />
+   </g>
+   <g id="shift_patch_9">
+    <path d="M 436.32 226.8  Q 436.32 214.2 436.32 203.612461  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+    <path d="M 433.72 208.812461  L 436.32 203.612461  L 438.92 208.812461  z " clip-path="url(#shift_pd590fff7af)" style="fill: #202830; stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+   </g>
+   <g id="shift_patch_10">
+    <path d="M 327.6 226.8  Q 327.6 214.2 327.6 203.612461  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+    <path d="M 325 208.812461  L 327.6 203.612461  L 330.2 208.812461  z " clip-path="url(#shift_pd590fff7af)" style="fill: #202830; stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+   </g>
+   <g id="shift_patch_11">
+    <path d="M 460.8 149.04  Q 532.08 149.04 600.229505 149.04  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke: #33485c; stroke-width: 2.8; stroke-linecap: round" />
+    <path d="M 592.229505 145.04  L 600.229505 149.04  L 592.229505 153.04  z " clip-path="url(#shift_pd590fff7af)" style="fill: #33485c; stroke: #33485c; stroke-width: 2.8; stroke-linecap: round" />
+   </g>
+   <g id="shift_patch_12">
+    <path d="M 769.68 113.04  Q 830.52 113.04 889.347539 113.04  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+    <path d="M 884.147539 110.44  L 889.347539 113.04  L 884.147539 115.64  z " clip-path="url(#shift_pd590fff7af)" style="fill: #202830; stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+   </g>
+   <g id="shift_patch_13">
+    <path d="M 769.68 174.24  Q 831.24 174.24 890.452129 174.24  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke: #c84b31; stroke-width: 2.1; stroke-linecap: round" />
+    <path d="M 885.252129 171.64  L 890.452129 174.24  L 885.252129 176.84  z " clip-path="url(#shift_pd590fff7af)" style="fill: #c84b31; stroke: #c84b31; stroke-width: 2.1; stroke-linecap: round" />
+   </g>
+   <g id="shift_patch_14">
+    <path d="M 866.16 192.24  Q 927.72 192.24 986.932129 192.24  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke: #1e5f74; stroke-width: 2.1; stroke-linecap: round" />
+    <path d="M 981.732129 189.64  L 986.932129 192.24  L 981.732129 194.84  z " clip-path="url(#shift_pd590fff7af)" style="fill: #1e5f74; stroke: #1e5f74; stroke-width: 2.1; stroke-linecap: round" />
+   </g>
+   <g id="shift_patch_15">
+    <path d="M 897.12 228.24  Q 897.12 219.24 897.12 212.252461  " clip-path="url(#shift_pd590fff7af)" style="fill: none; stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+    <path d="M 894.52 217.452461  L 897.12 212.252461  L 899.72 217.452461  z " clip-path="url(#shift_pd590fff7af)" style="fill: #202830; stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+   </g>
+   <g id="shift_text_18">
+    <text style="font-size: 28px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle" x="449.28" y="115.76" transform="rotate(-0 449.28 115.76)">...</text>
+   </g>
+   <g id="shift_text_19">
+    <text style="font-size: 28px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle" x="450" y="184.88" transform="rotate(-0 450 184.88)">...</text>
+   </g>
+   <g id="shift_text_20">
+    <text style="font-size: 28px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle" x="912.96" y="115.76" transform="rotate(-0 912.96 115.76)">...</text>
+   </g>
+   <g id="shift_text_21">
+    <text style="font-size: 28px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle" x="1009.44" y="184.88" transform="rotate(-0 1009.44 184.88)">...</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="shift_pd590fff7af">
+   <rect x="0" y="0" width="1038.24" height="279.36" />
+  </clipPath>
+ </defs>
+</svg><svg x="0" y="261" width="1038.24" height="218" viewBox="0 52 1038.24 218" overflow="hidden"><defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="skip_figure_1">
+  <g id="skip_patch_1">
+   <path d="M 0 279.36  L 1038.24 279.36  L 1038.24 0  L 0 0  z " style="fill: #ffffff" />
+  </g>
+  <g id="skip_axes_1">
+   <g id="skip_patch_2">
+    <path d="M 149.04 96.48  L 419.04 96.48  Q 424.08 96.48 424.08 101.52  L 424.08 125.28  Q 424.08 130.32 419.04 130.32  L 149.04 130.32  Q 144 130.32 144 125.28  L 144 101.52  Q 144 96.48 149.04 96.48  z " clip-path="url(#skip_p1942990f3a)" style="fill: #f5f7f8; stroke: #607487; stroke-width: 1.45; stroke-linejoin: miter" />
+   </g>
+   <g id="skip_patch_3">
+    <path d="M 208.8 165.6  L 419.04 165.6  Q 424.08 165.6 424.08 170.64  L 424.08 194.4  Q 424.08 199.44 419.04 199.44  L 208.8 199.44  Q 203.76 199.44 203.76 194.4  L 203.76 170.64  Q 203.76 165.6 208.8 165.6  z " clip-path="url(#skip_p1942990f3a)" style="fill: #f5f7f8; stroke: #607487; stroke-width: 1.45; stroke-linejoin: miter" />
+   </g>
+   <g id="skip_patch_4">
+    <path d="M 617.76 96.48  L 887.76 96.48  Q 892.8 96.48 892.8 101.52  L 892.8 125.28  Q 892.8 130.32 887.76 130.32  L 617.76 130.32  Q 612.72 130.32 612.72 125.28  L 612.72 101.52  Q 612.72 96.48 617.76 96.48  z " clip-path="url(#skip_p1942990f3a)" style="fill: #f5f7f8; stroke: #607487; stroke-width: 1.45; stroke-linejoin: miter" />
+   </g>
+   <g id="skip_patch_5">
+    <path d="M 774.72 167.04  L 984.24 167.04  Q 989.28 167.04 989.28 172.08  L 989.28 195.84  Q 989.28 200.88 984.24 200.88  L 774.72 200.88  Q 769.68 200.88 769.68 195.84  L 769.68 172.08  Q 769.68 167.04 774.72 167.04  z " clip-path="url(#skip_p1942990f3a)" style="fill: #f5f7f8; stroke: #607487; stroke-width: 1.45; stroke-linejoin: miter" />
+   </g>
+   <g id="skip_text_1">
+    <text style="font-size: 25px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle" x="93.6" y="124.7" transform="rotate(-0 93.6 124.7)">Text:</text>
+   </g>
+   <g id="skip_text_2">
+    <text style="font-size: 25px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle" x="92.16" y="193.82" transform="rotate(-0 92.16 193.82)">Pattern:</text>
+   </g>
+   <g id="skip_text_3">
+    <text style="font-size: 16px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #a52b94" x="252" y="76.64" transform="rotate(-0 252 76.64)">直接跳过</text>
+   </g>
+   <g id="skip_text_4">
+    <text style="font-size: 16px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #c84b31" x="263.52" y="192.4075" transform="rotate(-0 263.52 192.4075)">prefix</text>
+   </g>
+   <g id="skip_text_5">
+    <text style="font-size: 16px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #1e5f74" x="367.2" y="187.52" transform="rotate(-0 367.2 187.52)">suffix</text>
+   </g>
+   <g id="skip_line2d_1">
+    <path d="M 436.32 90.72  L 436.32 210.24  " clip-path="url(#skip_p1942990f3a)" style="fill: none; stroke-dasharray: 6.4,6.4; stroke-dashoffset: 0; stroke: #202830; stroke-width: 1.6" />
+   </g>
+   <g id="skip_text_6">
+    <text style="font-size: 24px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #ff2d20" x="436.32" y="81.84" transform="rotate(-0 436.32 81.84)">X</text>
+   </g>
+   <g id="skip_text_7">
+    <text style="font-size: 14px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle" x="439.2" y="242.876562" transform="rotate(-0 439.2 242.876562)">p2</text>
+   </g>
+   <g id="skip_text_8">
+    <text style="font-size: 14px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle" x="327.6" y="243.596563" transform="rotate(-0 327.6 243.596563)">next[p2]</text>
+   </g>
+   <g id="skip_text_9">
+    <text style="font-size: 28px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle" x="449.28" y="115.76" transform="rotate(-0 449.28 115.76)">...</text>
+   </g>
+   <g id="skip_text_10">
+    <text style="font-size: 28px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle" x="450" y="184.88" transform="rotate(-0 450 184.88)">...</text>
+   </g>
+   <g id="skip_text_11">
+    <text style="font-size: 16px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #a52b94" x="830.16" y="76.64" transform="rotate(-0 830.16 76.64)">这部分不用匹配</text>
+   </g>
+   <g id="skip_text_12">
+    <text style="font-size: 16px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #c84b31" x="829.44" y="193.1275" transform="rotate(-0 829.44 193.1275)">prefix</text>
+   </g>
+   <g id="skip_text_13">
+    <text style="font-size: 16px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #1e5f74" x="933.12" y="187.52" transform="rotate(-0 933.12 187.52)">suffix</text>
+   </g>
+   <g id="skip_line2d_2">
+    <path d="M 897.12 90.72  L 897.12 210.96  " clip-path="url(#skip_p1942990f3a)" style="fill: none; stroke-dasharray: 6.4,6.4; stroke-dashoffset: 0; stroke: #202830; stroke-width: 1.6" />
+   </g>
+   <g id="skip_text_14">
+    <text style="font-size: 14px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle" x="901.44" y="253.676562" transform="rotate(-0 901.44 253.676562)">p2</text>
+   </g>
+   <g id="skip_text_15">
+    <text style="font-size: 28px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle" x="912.96" y="115.76" transform="rotate(-0 912.96 115.76)">...</text>
+   </g>
+   <g id="skip_text_16">
+    <text style="font-size: 28px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle" x="1009.44" y="184.88" transform="rotate(-0 1009.44 184.88)">...</text>
+   </g>
+   <g id="skip_text_17">
+    <text style="font-size: 11.5px; font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a52b94" x="952.56" y="252.862891" transform="rotate(-0 952.56 252.862891)">从p2开始匹配</text>
+   </g>
+   <g id="skip_patch_6">
+    <path d="M 252 79.92  Q 245.88 92.16 240.56 102.8  " clip-path="url(#skip_p1942990f3a)" style="fill: none; stroke: #a52b94; stroke-width: 1.6; stroke-linecap: round" />
+    <path d="M 244.137709 100.116718  L 240.56 102.8  L 240.56 98.327864  z " clip-path="url(#skip_p1942990f3a)" style="fill: #a52b94; stroke: #a52b94; stroke-width: 1.6; stroke-linecap: round" />
+   </g>
+   <g id="skip_patch_7">
+    <path d="M 301.68 113.4  Q 362.88 113.4 422.067539 113.4  " clip-path="url(#skip_p1942990f3a)" style="fill: none; stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+    <path d="M 416.867539 110.8  L 422.067539 113.4  L 416.867539 116  z " clip-path="url(#skip_p1942990f3a)" style="stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+   </g>
+   <g id="skip_patch_8">
+    <path d="M 203.76 172.8  Q 265.32 172.8 324.532129 172.8  " clip-path="url(#skip_p1942990f3a)" style="fill: none; stroke: #c84b31; stroke-width: 2.1; stroke-linecap: round" />
+    <path d="M 319.332129 170.2  L 324.532129 172.8  L 319.332129 175.4  z " clip-path="url(#skip_p1942990f3a)" style="fill: #c84b31; stroke: #c84b31; stroke-width: 2.1; stroke-linecap: round" />
+   </g>
+   <g id="skip_patch_9">
+    <path d="M 300.96 190.8  Q 362.52 190.8 421.732129 190.8  " clip-path="url(#skip_p1942990f3a)" style="fill: none; stroke: #1e5f74; stroke-width: 2.1; stroke-linecap: round" />
+    <path d="M 416.532129 188.2  L 421.732129 190.8  L 416.532129 193.4  z " clip-path="url(#skip_p1942990f3a)" style="fill: #1e5f74; stroke: #1e5f74; stroke-width: 2.1; stroke-linecap: round" />
+   </g>
+   <g id="skip_patch_10">
+    <path d="M 436.32 226.8  Q 436.32 214.2 436.32 203.612461  " clip-path="url(#skip_p1942990f3a)" style="fill: none; stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+    <path d="M 433.72 208.812461  L 436.32 203.612461  L 438.92 208.812461  z " clip-path="url(#skip_p1942990f3a)" style="stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+   </g>
+   <g id="skip_patch_11">
+    <path d="M 327.6 226.8  Q 327.6 214.2 327.6 203.612461  " clip-path="url(#skip_p1942990f3a)" style="fill: none; stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+    <path d="M 325 208.812461  L 327.6 203.612461  L 330.2 208.812461  z " clip-path="url(#skip_p1942990f3a)" style="stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+   </g>
+   <g id="skip_patch_12">
+    <path d="M 460.8 149.04  Q 532.08 149.04 600.229505 149.04  " clip-path="url(#skip_p1942990f3a)" style="fill: none; stroke: #33485c; stroke-width: 2.8; stroke-linecap: round" />
+    <path d="M 592.229505 145.04  L 600.229505 149.04  L 592.229505 153.04  z " clip-path="url(#skip_p1942990f3a)" style="fill: #33485c; stroke: #33485c; stroke-width: 2.8; stroke-linecap: round" />
+   </g>
+   <g id="skip_patch_13">
+    <path d="M 799.2 79.92  Q 790.2 92.16 782.2597 102.958808  " clip-path="url(#skip_p1942990f3a)" style="fill: none; stroke: #a52b94; stroke-width: 1.6; stroke-linecap: round" />
+    <path d="M 786.240564 100.920985  L 782.2597 102.958808  L 783.01796 98.551423  z " clip-path="url(#skip_p1942990f3a)" style="fill: #a52b94; stroke: #a52b94; stroke-width: 1.6; stroke-linecap: round" />
+   </g>
+   <g id="skip_patch_14">
+    <path d="M 769.68 113.04  Q 830.52 113.04 889.347539 113.04  " clip-path="url(#skip_p1942990f3a)" style="fill: none; stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+    <path d="M 884.147539 110.44  L 889.347539 113.04  L 884.147539 115.64  z " clip-path="url(#skip_p1942990f3a)" style="stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+   </g>
+   <g id="skip_patch_15">
+    <path d="M 769.68 174.24  Q 831.24 174.24 890.452129 174.24  " clip-path="url(#skip_p1942990f3a)" style="fill: none; stroke: #c84b31; stroke-width: 2.1; stroke-linecap: round" />
+    <path d="M 885.252129 171.64  L 890.452129 174.24  L 885.252129 176.84  z " clip-path="url(#skip_p1942990f3a)" style="fill: #c84b31; stroke: #c84b31; stroke-width: 2.1; stroke-linecap: round" />
+   </g>
+   <g id="skip_patch_16">
+    <path d="M 866.16 192.24  Q 927.72 192.24 986.932129 192.24  " clip-path="url(#skip_p1942990f3a)" style="fill: none; stroke: #1e5f74; stroke-width: 2.1; stroke-linecap: round" />
+    <path d="M 981.732129 189.64  L 986.932129 192.24  L 981.732129 194.84  z " clip-path="url(#skip_p1942990f3a)" style="fill: #1e5f74; stroke: #1e5f74; stroke-width: 2.1; stroke-linecap: round" />
+   </g>
+   <g id="skip_patch_17">
+    <path d="M 897.12 228.24  Q 897.12 219.24 897.12 212.252461  " clip-path="url(#skip_p1942990f3a)" style="fill: none; stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+    <path d="M 894.52 217.452461  L 897.12 212.252461  L 899.72 217.452461  z " clip-path="url(#skip_p1942990f3a)" style="stroke: #202830; stroke-width: 1.8; stroke-linecap: round" />
+   </g>
+   <g id="skip_patch_18">
+    <path d="M 919.44 249.12  Q 931.32 249.12 941.411146 249.12  " clip-path="url(#skip_p1942990f3a)" style="fill: none; stroke: #a52b94; stroke-width: 1.6; stroke-linecap: round" />
+    <path d="M 937.011146 246.92  L 941.411146 249.12  L 937.011146 251.32  z " clip-path="url(#skip_p1942990f3a)" style="fill: #a52b94; stroke: #a52b94; stroke-width: 1.6; stroke-linecap: round" />
+   </g>
+   <g id="skip_patch_19">
+    <path d="M 203.76 105.12  L 301.68 105.12  L 301.68 121.68  L 203.76 121.68  L 203.76 105.12  z " clip-path="url(#skip_p1942990f3a)" style="fill: none; stroke: #a52b94; stroke-width: 1.8; stroke-linejoin: miter" />
+   </g>
+   <g id="skip_patch_20">
+    <path d="M 769.68 105.12  L 891.36 105.12  L 891.36 121.68  L 769.68 121.68  L 769.68 105.12  z " clip-path="url(#skip_p1942990f3a)" style="fill: none; stroke: #a52b94; stroke-width: 1.8; stroke-linejoin: miter" />
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="skip_p1942990f3a">
+   <rect x="0" y="0" width="1038.24" height="279.36" />
+  </clipPath>
+ </defs>
+</svg></svg>

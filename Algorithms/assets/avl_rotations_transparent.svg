@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="1160" height="203" viewBox="0 -8 1160 203" role="img" aria-labelledby="title desc">
+  <ns0:title id="title">AVL 树的左旋与右旋</ns0:title>
+  <ns0:desc id="desc">左侧展示左旋，右侧展示右旋，中间以虚线分隔；红色弧形箭头表示旋转方向，蓝框标出换位的 b 子树；</ns0:desc>
+  <ns0:g transform="translate(58 9.35) scale(0.9)">
+  <ns0:g transform="translate(0 0)">
+    <ns0:g transform="translate(20 0)">
+    <ns0:path d="M 215,72 C 205,-25 45,-25 43,72" fill="none" stroke="#c84652" stroke-width="2.2" stroke-linecap="round" marker-end="url(#rotation-arrow)" />
+    <ns0:rect x="116" y="107" width="46" height="75" rx="5" fill="#f5fafe" stroke="#477599" stroke-width="1.5" />
+    <ns0:line x1="118" y1="34" x2="62" y2="102" stroke="#607487" stroke-width="1.7" />
+    <ns0:line x1="118" y1="34" x2="170" y2="88" stroke="#607487" stroke-width="1.7" />
+    <ns0:line x1="170" y1="88" x2="139" y2="158" stroke="#477599" stroke-width="1.7" />
+    <ns0:line x1="170" y1="88" x2="201" y2="158" stroke="#607487" stroke-width="1.7" />
+    <ns0:circle cx="118" cy="34" r="16" fill="#e7eaec" stroke="#33485c" stroke-width="1.6" />
+    <ns0:text x="118" y="39" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#111417">5</ns0:text>
+    <ns0:polygon points="62,85 45,117 79,117" fill="#f4f6f7" stroke="#607487" stroke-width="1.4" stroke-linejoin="round" />
+    <ns0:text x="62" y="110" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="15" font-style="italic" fill="#202830">a</ns0:text>
+    <ns0:circle cx="170" cy="88" r="16" fill="#e7eaec" stroke="#33485c" stroke-width="1.6" />
+    <ns0:text x="170" y="93" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#111417">8</ns0:text>
+    <ns0:polygon points="139,141 122,173 156,173" fill="#eaf2f8" stroke="#477599" stroke-width="1.4" stroke-linejoin="round" />
+    <ns0:text x="139" y="166" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="15" font-style="italic" fill="#202830">b</ns0:text>
+    <ns0:polygon points="201,141 184,173 218,173" fill="#f4f6f7" stroke="#607487" stroke-width="1.4" stroke-linejoin="round" />
+    <ns0:text x="201" y="166" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="15" font-style="italic" fill="#202830">c</ns0:text>
+    </ns0:g>
+    <ns0:line x1="267" y1="105" x2="313" y2="105" stroke="#9fb7cb" stroke-width="1.8" marker-end="url(#arrow)" />
+    <ns0:rect x="268" y="72" width="44" height="25" rx="3" fill="#f5fafe" stroke="none" />
+    <ns0:text x="290" y="90" text-anchor="middle" font-family="Noto Sans CJK SC, sans-serif" font-size="15" fill="#202830">左旋</ns0:text>
+    <ns0:g transform="translate(-20 0)">
+    <ns0:rect x="414" y="107" width="46" height="75" rx="5" fill="#f5fafe" stroke="#477599" stroke-width="1.5" />
+    <ns0:line x1="458" y1="34" x2="406" y2="88" stroke="#607487" stroke-width="1.7" />
+    <ns0:line x1="458" y1="34" x2="514" y2="102" stroke="#607487" stroke-width="1.7" />
+    <ns0:line x1="406" y1="88" x2="375" y2="158" stroke="#607487" stroke-width="1.7" />
+    <ns0:line x1="406" y1="88" x2="437" y2="158" stroke="#477599" stroke-width="1.7" />
+    <ns0:circle cx="458" cy="34" r="16" fill="#e7eaec" stroke="#33485c" stroke-width="1.6" />
+    <ns0:text x="458" y="39" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#111417">8</ns0:text>
+    <ns0:circle cx="406" cy="88" r="16" fill="#e7eaec" stroke="#33485c" stroke-width="1.6" />
+    <ns0:text x="406" y="93" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#111417">5</ns0:text>
+    <ns0:polygon points="514,85 497,117 531,117" fill="#f4f6f7" stroke="#607487" stroke-width="1.4" stroke-linejoin="round" />
+    <ns0:text x="514" y="110" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="15" font-style="italic" fill="#202830">c</ns0:text>
+    <ns0:polygon points="375,141 358,173 392,173" fill="#f4f6f7" stroke="#607487" stroke-width="1.4" stroke-linejoin="round" />
+    <ns0:text x="375" y="166" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="15" font-style="italic" fill="#202830">a</ns0:text>
+    <ns0:polygon points="437,141 420,173 454,173" fill="#eaf2f8" stroke="#477599" stroke-width="1.4" stroke-linejoin="round" />
+    <ns0:text x="437" y="166" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="15" font-style="italic" fill="#202830">b</ns0:text>
+    </ns0:g>
+  </ns0:g>
+  <ns0:line x1="565" y1="0" x2="565" y2="183" stroke="#b4bec6" stroke-width="1.4" stroke-dasharray="5 6" />
+  <ns0:g transform="translate(580 0)">
+    <ns0:g transform="translate(40 0)">
+    <ns0:path d="M 31,72 C 34,-25 190,-25 193,72" fill="none" stroke="#c84652" stroke-width="2.2" stroke-linecap="round" marker-end="url(#rotation-arrow)" />
+    <ns0:rect x="74" y="107" width="46" height="75" rx="5" fill="#f5fafe" stroke="#477599" stroke-width="1.5" />
+    <ns0:line x1="118" y1="34" x2="66" y2="88" stroke="#607487" stroke-width="1.7" />
+    <ns0:line x1="118" y1="34" x2="174" y2="102" stroke="#607487" stroke-width="1.7" />
+    <ns0:line x1="66" y1="88" x2="35" y2="158" stroke="#607487" stroke-width="1.7" />
+    <ns0:line x1="66" y1="88" x2="97" y2="158" stroke="#477599" stroke-width="1.7" />
+    <ns0:circle cx="118" cy="34" r="16" fill="#e7eaec" stroke="#33485c" stroke-width="1.6" />
+    <ns0:text x="118" y="39" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#111417">5</ns0:text>
+    <ns0:circle cx="66" cy="88" r="16" fill="#e7eaec" stroke="#33485c" stroke-width="1.6" />
+    <ns0:text x="66" y="93" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#111417">2</ns0:text>
+    <ns0:polygon points="174,85 157,117 191,117" fill="#f4f6f7" stroke="#607487" stroke-width="1.4" stroke-linejoin="round" />
+    <ns0:text x="174" y="110" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="15" font-style="italic" fill="#202830">c</ns0:text>
+    <ns0:polygon points="35,141 18,173 52,173" fill="#f4f6f7" stroke="#607487" stroke-width="1.4" stroke-linejoin="round" />
+    <ns0:text x="35" y="166" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="15" font-style="italic" fill="#202830">a</ns0:text>
+    <ns0:polygon points="97,141 80,173 114,173" fill="#eaf2f8" stroke="#477599" stroke-width="1.4" stroke-linejoin="round" />
+    <ns0:text x="97" y="166" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="15" font-style="italic" fill="#202830">b</ns0:text>
+    </ns0:g>
+    <ns0:line x1="267" y1="105" x2="313" y2="105" stroke="#9fb7cb" stroke-width="1.8" marker-end="url(#arrow)" />
+    <ns0:rect x="268" y="72" width="44" height="25" rx="3" fill="#f5fafe" stroke="none" />
+    <ns0:text x="290" y="90" text-anchor="middle" font-family="Noto Sans CJK SC, sans-serif" font-size="15" fill="#202830">右旋</ns0:text>
+    <ns0:g transform="translate(-40 0)">
+    <ns0:rect x="456" y="107" width="46" height="75" rx="5" fill="#f5fafe" stroke="#477599" stroke-width="1.5" />
+    <ns0:line x1="458" y1="34" x2="402" y2="102" stroke="#607487" stroke-width="1.7" />
+    <ns0:line x1="458" y1="34" x2="510" y2="88" stroke="#607487" stroke-width="1.7" />
+    <ns0:line x1="510" y1="88" x2="479" y2="158" stroke="#477599" stroke-width="1.7" />
+    <ns0:line x1="510" y1="88" x2="541" y2="158" stroke="#607487" stroke-width="1.7" />
+    <ns0:circle cx="458" cy="34" r="16" fill="#e7eaec" stroke="#33485c" stroke-width="1.6" />
+    <ns0:text x="458" y="39" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#111417">2</ns0:text>
+    <ns0:polygon points="402,85 385,117 419,117" fill="#f4f6f7" stroke="#607487" stroke-width="1.4" stroke-linejoin="round" />
+    <ns0:text x="402" y="110" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="15" font-style="italic" fill="#202830">a</ns0:text>
+    <ns0:circle cx="510" cy="88" r="16" fill="#e7eaec" stroke="#33485c" stroke-width="1.6" />
+    <ns0:text x="510" y="93" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#111417">5</ns0:text>
+    <ns0:polygon points="479,141 462,173 496,173" fill="#eaf2f8" stroke="#477599" stroke-width="1.4" stroke-linejoin="round" />
+    <ns0:text x="479" y="166" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="15" font-style="italic" fill="#202830">b</ns0:text>
+    <ns0:polygon points="541,141 524,173 558,173" fill="#f4f6f7" stroke="#607487" stroke-width="1.4" stroke-linejoin="round" />
+    <ns0:text x="541" y="166" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="15" font-style="italic" fill="#202830">c</ns0:text>
+    </ns0:g>
+  </ns0:g>
+  </ns0:g>
+  <ns0:defs>
+    <ns0:marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+      <ns0:path d="M0 0 L8 4 L0 8 Z" fill="#9fb7cb" />
+    </ns0:marker>
+    <ns0:marker id="rotation-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto">
+      <ns0:path d="M0 0 L8 4 L0 8 Z" fill="#c84652" />
+    </ns0:marker>
+  </ns0:defs>
+</ns0:svg>

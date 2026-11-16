@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="1080" height="450" viewBox="0 0 1080 450">
+<ns0:defs><ns0:filter id="codex-white-label-bg" x="-12%" y="-20%" width="124%" height="140%"><ns0:feFlood flood-color="#ffffff" result="white" /><ns0:feGaussianBlur in="white" stdDeviation="2" result="soft" /><ns0:feComponentTransfer in="soft" result="rounded"><ns0:feFuncA type="discrete" tableValues="0 0 1 1" /></ns0:feComponentTransfer><ns0:feMerge><ns0:feMergeNode in="rounded" /><ns0:feMergeNode in="SourceGraphic" /></ns0:feMerge></ns0:filter></ns0:defs><ns0:title>4 位先行进位部件</ns0:title><ns0:desc>C1 至 C4 各由本位生成项 Gi 与各级传递项做或运算；各乘积项为与运算，逐级包含低位生成信号或输入进位 C0；</ns0:desc>
+<ns0:defs><ns0:marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto" markerUnits="strokeWidth"><ns0:path d="M0 0 L7 3.5 L0 7 Z" fill="#456683" /></ns0:marker></ns0:defs>
+<ns0:text x="150" y="42" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="20" font-weight="bold" fill="#202830" filter="url(#codex-white-label-bg)">C4</ns0:text>
+<ns0:path d="M150 82 L150 51" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:path d="M117 82 Q120 54 150 57 Q180 54 183 82 Q150 70 117 82 Z" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" />
+<ns0:rect x="56" y="115" width="188" height="34" rx="17" fill="#EDF5F2" stroke="#456683" stroke-width="1.5" /><ns0:text x="150.0" y="137.25" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#202830">G₄</ns0:text>
+<ns0:path d="M244 132 L259 132" fill="none" stroke="#456683" stroke-width="1.6" />
+<ns0:rect x="56" y="170" width="188" height="34" rx="17" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" /><ns0:text x="150.0" y="192.25" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#202830">P₄G₃</ns0:text>
+<ns0:path d="M244 187 L259 187" fill="none" stroke="#456683" stroke-width="1.6" />
+<ns0:rect x="56" y="225" width="188" height="34" rx="17" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" /><ns0:text x="150.0" y="247.25" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#202830">P₄P₃G₂</ns0:text>
+<ns0:path d="M244 242 L259 242" fill="none" stroke="#456683" stroke-width="1.6" />
+<ns0:rect x="56" y="280" width="188" height="34" rx="17" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" /><ns0:text x="150.0" y="302.25" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#202830">P₄P₃P₂G₁</ns0:text>
+<ns0:path d="M244 297 L259 297" fill="none" stroke="#456683" stroke-width="1.6" />
+<ns0:rect x="56" y="335" width="188" height="34" rx="17" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" /><ns0:text x="150.0" y="357.25" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#202830">P₄P₃P₂P₁C₀</ns0:text>
+<ns0:path d="M244 352 L259 352" fill="none" stroke="#456683" stroke-width="1.6" />
+<ns0:path d="M259 132 V352" fill="none" stroke="#456683" stroke-width="1.6" />
+<ns0:path d="M259 132 V91 H170" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="410" y="42" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="20" font-weight="bold" fill="#202830" filter="url(#codex-white-label-bg)">C3</ns0:text>
+<ns0:path d="M410 82 L410 51" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:path d="M377 82 Q380 54 410 57 Q440 54 443 82 Q410 70 377 82 Z" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" />
+<ns0:rect x="316" y="115" width="188" height="34" rx="17" fill="#EDF5F2" stroke="#456683" stroke-width="1.5" /><ns0:text x="410.0" y="137.25" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#202830">G₃</ns0:text>
+<ns0:path d="M504 132 L519 132" fill="none" stroke="#456683" stroke-width="1.6" />
+<ns0:rect x="316" y="170" width="188" height="34" rx="17" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" /><ns0:text x="410.0" y="192.25" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#202830">P₃G₂</ns0:text>
+<ns0:path d="M504 187 L519 187" fill="none" stroke="#456683" stroke-width="1.6" />
+<ns0:rect x="316" y="225" width="188" height="34" rx="17" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" /><ns0:text x="410.0" y="247.25" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#202830">P₃P₂G₁</ns0:text>
+<ns0:path d="M504 242 L519 242" fill="none" stroke="#456683" stroke-width="1.6" />
+<ns0:rect x="316" y="280" width="188" height="34" rx="17" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" /><ns0:text x="410.0" y="302.25" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#202830">P₃P₂P₁C₀</ns0:text>
+<ns0:path d="M504 297 L519 297" fill="none" stroke="#456683" stroke-width="1.6" />
+<ns0:path d="M519 132 V297" fill="none" stroke="#456683" stroke-width="1.6" />
+<ns0:path d="M519 132 V91 H430" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="670" y="42" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="20" font-weight="bold" fill="#202830" filter="url(#codex-white-label-bg)">C2</ns0:text>
+<ns0:path d="M670 82 L670 51" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:path d="M637 82 Q640 54 670 57 Q700 54 703 82 Q670 70 637 82 Z" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" />
+<ns0:rect x="576" y="115" width="188" height="34" rx="17" fill="#EDF5F2" stroke="#456683" stroke-width="1.5" /><ns0:text x="670.0" y="137.25" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#202830">G₂</ns0:text>
+<ns0:path d="M764 132 L779 132" fill="none" stroke="#456683" stroke-width="1.6" />
+<ns0:rect x="576" y="170" width="188" height="34" rx="17" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" /><ns0:text x="670.0" y="192.25" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#202830">P₂G₁</ns0:text>
+<ns0:path d="M764 187 L779 187" fill="none" stroke="#456683" stroke-width="1.6" />
+<ns0:rect x="576" y="225" width="188" height="34" rx="17" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" /><ns0:text x="670.0" y="247.25" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#202830">P₂P₁C₀</ns0:text>
+<ns0:path d="M764 242 L779 242" fill="none" stroke="#456683" stroke-width="1.6" />
+<ns0:path d="M779 132 V242" fill="none" stroke="#456683" stroke-width="1.6" />
+<ns0:path d="M779 132 V91 H690" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="930" y="42" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="20" font-weight="bold" fill="#202830" filter="url(#codex-white-label-bg)">C1</ns0:text>
+<ns0:path d="M930 82 L930 51" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:path d="M897 82 Q900 54 930 57 Q960 54 963 82 Q930 70 897 82 Z" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" />
+<ns0:rect x="836" y="115" width="188" height="34" rx="17" fill="#EDF5F2" stroke="#456683" stroke-width="1.5" /><ns0:text x="930.0" y="137.25" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#202830">G₁</ns0:text>
+<ns0:path d="M1024 132 L1039 132" fill="none" stroke="#456683" stroke-width="1.6" />
+<ns0:rect x="836" y="170" width="188" height="34" rx="17" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" /><ns0:text x="930.0" y="192.25" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#202830">P₁C₀</ns0:text>
+<ns0:path d="M1024 187 L1039 187" fill="none" stroke="#456683" stroke-width="1.6" />
+<ns0:path d="M1039 132 V187" fill="none" stroke="#456683" stroke-width="1.6" />
+<ns0:path d="M1039 132 V91 H950" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="540" y="432" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#607487" filter="url(#codex-white-label-bg)">上方或门汇合各项；连写表示与运算</ns0:text>
+</ns0:svg>

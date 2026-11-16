@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="1185" height="215" viewBox="0 0 1185 215">
+<ns0:defs><ns0:filter id="codex-white-label-bg" x="-12%" y="-20%" width="124%" height="140%"><ns0:feFlood flood-color="#ffffff" result="white" /><ns0:feGaussianBlur in="white" stdDeviation="2" result="soft" /><ns0:feComponentTransfer in="soft" result="rounded"><ns0:feFuncA type="discrete" tableValues="0 0 1 1" /></ns0:feComponentTransfer><ns0:feMerge><ns0:feMergeNode in="rounded" /><ns0:feMergeNode in="SourceGraphic" /></ns0:feMerge></ns0:filter></ns0:defs><ns0:title>8 位串行进位加法器</ns0:title><ns0:desc>八个全加器从右向左排列；每级的进位输出送入左侧相邻级；每级接收 X 和 Y 并输出 F；</ns0:desc>
+<ns0:defs><ns0:marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto" markerUnits="strokeWidth"><ns0:path d="M0 0 L7 3.5 L0 7 Z" fill="#456683" /></ns0:marker></ns0:defs>
+<ns0:rect x="40" y="82" width="90" height="58" rx="7" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" /><ns0:text x="85.0" y="118.7" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" fill="#202830">FA</ns0:text>
+<ns0:text x="85" y="72" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">F8</ns0:text>
+<ns0:path d="M85 82 L85 43" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="65" y="190" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">X8</ns0:text>
+<ns0:path d="M65 172 L65 142" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="105" y="190" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">Y8</ns0:text>
+<ns0:path d="M105 172 L105 142" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:rect x="180" y="82" width="90" height="58" rx="7" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" /><ns0:text x="225.0" y="118.7" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" fill="#202830">FA</ns0:text>
+<ns0:text x="225" y="72" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">F7</ns0:text>
+<ns0:path d="M225 82 L225 43" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="205" y="190" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">X7</ns0:text>
+<ns0:path d="M205 172 L205 142" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="245" y="190" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">Y7</ns0:text>
+<ns0:path d="M245 172 L245 142" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:rect x="320" y="82" width="90" height="58" rx="7" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" /><ns0:text x="365.0" y="118.7" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" fill="#202830">FA</ns0:text>
+<ns0:text x="365" y="72" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">F6</ns0:text>
+<ns0:path d="M365 82 L365 43" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="345" y="190" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">X6</ns0:text>
+<ns0:path d="M345 172 L345 142" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="385" y="190" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">Y6</ns0:text>
+<ns0:path d="M385 172 L385 142" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:rect x="460" y="82" width="90" height="58" rx="7" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" /><ns0:text x="505.0" y="118.7" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" fill="#202830">FA</ns0:text>
+<ns0:text x="505" y="72" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">F5</ns0:text>
+<ns0:path d="M505 82 L505 43" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="485" y="190" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">X5</ns0:text>
+<ns0:path d="M485 172 L485 142" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="525" y="190" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">Y5</ns0:text>
+<ns0:path d="M525 172 L525 142" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:rect x="600" y="82" width="90" height="58" rx="7" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" /><ns0:text x="645.0" y="118.7" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" fill="#202830">FA</ns0:text>
+<ns0:text x="645" y="72" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">F4</ns0:text>
+<ns0:path d="M645 82 L645 43" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="625" y="190" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">X4</ns0:text>
+<ns0:path d="M625 172 L625 142" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="665" y="190" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">Y4</ns0:text>
+<ns0:path d="M665 172 L665 142" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:rect x="740" y="82" width="90" height="58" rx="7" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" /><ns0:text x="785.0" y="118.7" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" fill="#202830">FA</ns0:text>
+<ns0:text x="785" y="72" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">F3</ns0:text>
+<ns0:path d="M785 82 L785 43" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="765" y="190" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">X3</ns0:text>
+<ns0:path d="M765 172 L765 142" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="805" y="190" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">Y3</ns0:text>
+<ns0:path d="M805 172 L805 142" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:rect x="880" y="82" width="90" height="58" rx="7" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" /><ns0:text x="925.0" y="118.7" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" fill="#202830">FA</ns0:text>
+<ns0:text x="925" y="72" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">F2</ns0:text>
+<ns0:path d="M925 82 L925 43" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="905" y="190" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">X2</ns0:text>
+<ns0:path d="M905 172 L905 142" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="945" y="190" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">Y2</ns0:text>
+<ns0:path d="M945 172 L945 142" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:rect x="1020" y="82" width="90" height="58" rx="7" fill="#F4F7F9" stroke="#456683" stroke-width="1.5" /><ns0:text x="1065.0" y="118.7" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="22" font-weight="normal" fill="#202830">FA</ns0:text>
+<ns0:text x="1065" y="72" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">F1</ns0:text>
+<ns0:path d="M1065 82 L1065 43" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="1045" y="190" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">X1</ns0:text>
+<ns0:path d="M1045 172 L1045 142" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="1085" y="190" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">Y1</ns0:text>
+<ns0:path d="M1085 172 L1085 142" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:path d="M179 111 L131 111" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="155.0" y="101" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">C7</ns0:text>
+<ns0:path d="M319 111 L271 111" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="295.0" y="101" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">C6</ns0:text>
+<ns0:path d="M459 111 L411 111" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="435.0" y="101" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">C5</ns0:text>
+<ns0:path d="M599 111 L551 111" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="575.0" y="101" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">C4</ns0:text>
+<ns0:path d="M739 111 L691 111" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="715.0" y="101" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">C3</ns0:text>
+<ns0:path d="M879 111 L831 111" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="855.0" y="101" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">C2</ns0:text>
+<ns0:path d="M1019 111 L971 111" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="995.0" y="101" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">C1</ns0:text>
+<ns0:path d="M1169 111 L1111 111" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="1143" y="101" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">C0</ns0:text>
+<ns0:path d="M39 111 L15 111" fill="none" stroke="#456683" stroke-width="1.6" marker-end="url(#arrow)" />
+<ns0:text x="24" y="101" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#202830" filter="url(#codex-white-label-bg)">C8</ns0:text>
+</ns0:svg>

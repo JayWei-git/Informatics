@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="140.8" viewBox="0 0 960 176" role="img" aria-labelledby="title desc">
+  <title id="title">UDP 报文段的横向字节排列</title>
+  <desc id="desc">从左到右依次是各占 2 字节的源端口号、目的端口号、长度和检验和，随后是长度可变的应用数据；标记 0、2、4、6、8 和 8+N 表示从 UDP 报文段开头起算的字节偏移；</desc>
+
+  <g font-family="Noto Sans CJK SC, sans-serif" fill="#202830" text-anchor="middle" font-size="15">
+    <rect x="10" y="10" width="36" height="25" rx="3" fill="#f5fafe"/>
+    <rect x="146" y="10" width="36" height="25" rx="3" fill="#f5fafe"/>
+    <rect x="282" y="10" width="36" height="25" rx="3" fill="#f5fafe"/>
+    <rect x="418" y="10" width="36" height="25" rx="3" fill="#f5fafe"/>
+    <rect x="554" y="10" width="36" height="25" rx="3" fill="#f5fafe"/>
+    <rect x="904" y="10" width="56" height="25" rx="3" fill="#f5fafe"/>
+    <text x="28" y="28">0</text>
+    <text x="164" y="28">2</text>
+    <text x="300" y="28">4</text>
+    <text x="436" y="28">6</text>
+    <text x="572" y="28">8</text>
+    <text x="932" y="28">8+N</text>
+  </g>
+
+  <path d="M28 38 V49 M164 38 V49 M300 38 V49 M436 38 V49 M572 38 V49 M932 38 V49" fill="none" stroke="#607487" stroke-width="1.2"/>
+
+  <g fill="#f5f7f8" stroke="#607487" stroke-width="1.8">
+    <rect x="28" y="50" width="130" height="66" rx="9"/>
+    <rect x="164" y="50" width="130" height="66" rx="9"/>
+    <rect x="300" y="50" width="130" height="66" rx="9"/>
+    <rect x="436" y="50" width="130" height="66" rx="9"/>
+  </g>
+  <rect x="572" y="50" width="360" height="66" rx="9" fill="#e7eaec" stroke="#33485c" stroke-width="2"/>
+
+  <g font-family="Noto Sans CJK SC, sans-serif" fill="#202830" text-anchor="middle">
+    <g font-size="18">
+      <text x="93" y="81">源端口号</text>
+      <text x="229" y="81">目的端口号</text>
+      <text x="365" y="81">长度</text>
+      <text x="501" y="81">检验和</text>
+      <text x="752" y="81">应用数据（报文）</text>
+    </g>
+    <g font-size="14" fill="#33485C">
+      <text x="93" y="103">2 字节</text>
+      <text x="229" y="103">2 字节</text>
+      <text x="365" y="103">2 字节</text>
+      <text x="501" y="103">2 字节</text>
+      <text x="752" y="103">N 字节（长度可变）</text>
+    </g>
+  </g>
+
+  <path d="M28 124 V134 H572 V124" fill="none" stroke="#607487" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="221" y="137" width="158" height="30" rx="3" fill="#f5fafe"/>
+  <text x="300" y="158" font-family="Noto Sans CJK SC, sans-serif" font-size="15" fill="#202830" text-anchor="middle">UDP 首部：8 字节</text>
+</svg>

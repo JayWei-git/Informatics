@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="1204" height="158.4" viewBox="-224.8888888889 0 1337.7777777778 176" role="img" aria-labelledby="title desc">
+  <ns0:title id="title">霍夫曼树的构造过程</ns0:title>
+  <ns0:desc id="desc">从权值 2、4、5、3 开始；箭头与各阶段的顶层节点水平对齐；先合并 2 与 3 得到 5，再合并 4 与 5 得到 9，最后合并 5 与 9 得到根节点 14；</ns0:desc>
+  <ns0:defs><ns0:marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><ns0:path d="M0 0 L8 4 L0 8 Z" fill="#33485C" /></ns0:marker></ns0:defs>
+  <ns0:g transform="translate(-8 0)">
+  <ns0:circle cx="28" cy="92" r="15" fill="#FFFFFF" stroke="#33485C" stroke-width="1.5" /><ns0:text x="28" y="91" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">2</ns0:text>
+  <ns0:circle cx="70" cy="92" r="15" fill="#FFFFFF" stroke="#33485C" stroke-width="1.5" /><ns0:text x="70" y="91" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">4</ns0:text>
+  <ns0:circle cx="112" cy="92" r="15" fill="#FFFFFF" stroke="#33485C" stroke-width="1.5" /><ns0:text x="112" y="91" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">5</ns0:text>
+  <ns0:circle cx="154" cy="92" r="15" fill="#FFFFFF" stroke="#33485C" stroke-width="1.5" /><ns0:text x="154" y="91" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">3</ns0:text>
+  <ns0:line x1="176" y1="92" x2="205" y2="92" stroke="#33485C" stroke-width="1.6" marker-end="url(#arrow)" />
+  <ns0:line x1="337" y1="92" x2="312" y2="154" stroke="#607487" stroke-width="1.5" stroke-linecap="round" />
+  <ns0:line x1="337" y1="92" x2="362" y2="154" stroke="#607487" stroke-width="1.5" stroke-linecap="round" />
+  <ns0:circle cx="230" cy="92" r="15" fill="#FFFFFF" stroke="#33485C" stroke-width="1.5" /><ns0:text x="230" y="91" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">4</ns0:text>
+  <ns0:circle cx="270" cy="92" r="15" fill="#FFFFFF" stroke="#33485C" stroke-width="1.5" /><ns0:text x="270" y="91" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">5</ns0:text>
+  <ns0:circle cx="312" cy="154" r="15" fill="#FFFFFF" stroke="#33485C" stroke-width="1.5" /><ns0:text x="312" y="153" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">2</ns0:text>
+  <ns0:circle cx="362" cy="154" r="15" fill="#FFFFFF" stroke="#33485C" stroke-width="1.5" /><ns0:text x="362" y="153" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">3</ns0:text>
+  <ns0:rect x="321" y="77" width="32" height="30" rx="4" fill="#E7EAEC" stroke="#33485C" stroke-width="1.5" /><ns0:text x="337" y="91" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">5</ns0:text>
+  <ns0:line x1="391" y1="92" x2="420" y2="92" stroke="#33485C" stroke-width="1.6" marker-end="url(#arrow)" />
+  <ns0:line x1="482" y1="92" x2="458" y2="154" stroke="#607487" stroke-width="1.5" stroke-linecap="round" />
+  <ns0:circle cx="458" cy="154" r="15" fill="#FFFFFF" stroke="#33485C" stroke-width="1.5" /><ns0:text x="458" y="153" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">2</ns0:text>
+  <ns0:line x1="482" y1="92" x2="506" y2="154" stroke="#607487" stroke-width="1.5" stroke-linecap="round" />
+  <ns0:circle cx="506" cy="154" r="15" fill="#FFFFFF" stroke="#33485C" stroke-width="1.5" /><ns0:text x="506" y="153" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">3</ns0:text>
+  <ns0:rect x="466" y="77" width="32" height="30" rx="4" fill="#E7EAEC" stroke="#33485C" stroke-width="1.5" /><ns0:text x="482" y="91" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">5</ns0:text>
+  <ns0:line x1="574" y1="92" x2="550" y2="154" stroke="#607487" stroke-width="1.5" stroke-linecap="round" />
+  <ns0:circle cx="550" cy="154" r="15" fill="#FFFFFF" stroke="#33485C" stroke-width="1.5" /><ns0:text x="550" y="153" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">4</ns0:text>
+  <ns0:line x1="574" y1="92" x2="598" y2="154" stroke="#607487" stroke-width="1.5" stroke-linecap="round" />
+  <ns0:circle cx="598" cy="154" r="15" fill="#FFFFFF" stroke="#33485C" stroke-width="1.5" /><ns0:text x="598" y="153" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">5</ns0:text>
+  <ns0:rect x="558" y="77" width="32" height="30" rx="4" fill="#E7EAEC" stroke="#33485C" stroke-width="1.5" /><ns0:text x="574" y="91" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">9</ns0:text>
+  <ns0:line x1="625" y1="92" x2="654" y2="92" stroke="#33485C" stroke-width="1.6" marker-end="url(#arrow)" />
+  <ns0:line x1="769" y1="34" x2="711" y2="92" stroke="#607487" stroke-width="1.5" stroke-linecap="round" />
+  <ns0:line x1="769" y1="34" x2="827" y2="92" stroke="#607487" stroke-width="1.5" stroke-linecap="round" />
+  <ns0:line x1="711" y1="92" x2="685" y2="154" stroke="#607487" stroke-width="1.5" stroke-linecap="round" />
+  <ns0:line x1="711" y1="92" x2="737" y2="154" stroke="#607487" stroke-width="1.5" stroke-linecap="round" />
+  <ns0:line x1="827" y1="92" x2="801" y2="154" stroke="#607487" stroke-width="1.5" stroke-linecap="round" />
+  <ns0:line x1="827" y1="92" x2="853" y2="154" stroke="#607487" stroke-width="1.5" stroke-linecap="round" />
+  <ns0:circle cx="685" cy="154" r="15" fill="#FFFFFF" stroke="#33485C" stroke-width="1.5" /><ns0:text x="685" y="153" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">2</ns0:text>
+  <ns0:circle cx="737" cy="154" r="15" fill="#FFFFFF" stroke="#33485C" stroke-width="1.5" /><ns0:text x="737" y="153" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">3</ns0:text>
+  <ns0:circle cx="801" cy="154" r="15" fill="#FFFFFF" stroke="#33485C" stroke-width="1.5" /><ns0:text x="801" y="153" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">4</ns0:text>
+  <ns0:circle cx="853" cy="154" r="15" fill="#FFFFFF" stroke="#33485C" stroke-width="1.5" /><ns0:text x="853" y="153" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">5</ns0:text>
+  <ns0:rect x="695" y="77" width="32" height="30" rx="4" fill="#E7EAEC" stroke="#33485C" stroke-width="1.5" /><ns0:text x="711" y="91" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">5</ns0:text>
+  <ns0:rect x="811" y="77" width="32" height="30" rx="4" fill="#E7EAEC" stroke="#33485C" stroke-width="1.5" /><ns0:text x="827" y="91" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">9</ns0:text>
+  <ns0:rect x="753" y="19" width="32" height="30" rx="4" fill="#E7EAEC" stroke="#33485C" stroke-width="1.5" /><ns0:text x="769" y="33" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="16" font-weight="600" fill="#111417">14</ns0:text>
+  </ns0:g>
+</ns0:svg>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="297" viewBox="0 0 1000 330" role="img" aria-labelledby="title desc">
+  <title id="title">P4824 删除 moo 后从栈顶恢复 KMP 匹配位</title>
+  <desc id="desc">文本 whatthemomooofun 中，下标 9 到 11 的 moo 被删除；栈顶保留下标 8 的 o，其匹配位为 1，因此 p2 恢复为 2；p1 停在下标 12 的 o，继续处理该字符；</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L7 3.5 L0 7 Z" fill="#1e5f74"/></marker>
+    <marker id="arrow-dark" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L7 3.5 L0 7 Z" fill="#33485c"/></marker>
+  </defs>
+  <rect width="1000" height="330" fill="#ffffff"/>
+  <g font-family="Noto Sans CJK SC, Noto Sans, DejaVu Sans, sans-serif" fill="#33485c" font-size="17" text-anchor="end">
+    <text x="72" y="103">文本</text><text x="72" y="151">下标</text><text x="72" y="191">匹配位</text>
+  </g>
+  <path d="M82 119 H850 M82 163 H850" stroke="#e7eaec" stroke-width="1"/>
+  <rect x="92" y="76" width="40" height="40" rx="4" fill="#f6f8f9" stroke="#d8e0e5" stroke-width="1.2"/>
+  <text x="112" y="103" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="23" fill="#202830">w</text>
+  <text x="112" y="150" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#607487">0</text>
+  <text x="112" y="191" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#607487">-1</text>
+  <rect x="140" y="76" width="40" height="40" rx="4" fill="#f6f8f9" stroke="#d8e0e5" stroke-width="1.2"/>
+  <text x="160" y="103" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="23" fill="#202830">h</text>
+  <text x="160" y="150" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#607487">1</text>
+  <text x="160" y="191" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#607487">-1</text>
+  <rect x="188" y="76" width="40" height="40" rx="4" fill="#f6f8f9" stroke="#d8e0e5" stroke-width="1.2"/>
+  <text x="208" y="103" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="23" fill="#202830">a</text>
+  <text x="208" y="150" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#607487">2</text>
+  <text x="208" y="191" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#607487">-1</text>
+  <rect x="236" y="76" width="40" height="40" rx="4" fill="#f6f8f9" stroke="#d8e0e5" stroke-width="1.2"/>
+  <text x="256" y="103" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="23" fill="#202830">t</text>
+  <text x="256" y="150" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#607487">3</text>
+  <text x="256" y="191" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#607487">-1</text>
+  <rect x="284" y="76" width="40" height="40" rx="4" fill="#f6f8f9" stroke="#d8e0e5" stroke-width="1.2"/>
+  <text x="304" y="103" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="23" fill="#202830">t</text>
+  <text x="304" y="150" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#607487">4</text>
+  <text x="304" y="191" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#607487">-1</text>
+  <rect x="332" y="76" width="40" height="40" rx="4" fill="#f6f8f9" stroke="#d8e0e5" stroke-width="1.2"/>
+  <text x="352" y="103" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="23" fill="#202830">h</text>
+  <text x="352" y="150" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#607487">5</text>
+  <text x="352" y="191" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#607487">-1</text>
+  <rect x="380" y="76" width="40" height="40" rx="4" fill="#f6f8f9" stroke="#d8e0e5" stroke-width="1.2"/>
+  <text x="400" y="103" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="23" fill="#202830">e</text>
+  <text x="400" y="150" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#607487">6</text>
+  <text x="400" y="191" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#607487">-1</text>
+  <rect x="428" y="76" width="40" height="40" rx="4" fill="#f6f8f9" stroke="#d8e0e5" stroke-width="1.2"/>
+  <text x="448" y="103" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="23" fill="#202830">m</text>
+  <text x="448" y="150" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#607487">7</text>
+  <text x="448" y="191" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#607487">0</text>
+  <rect x="476" y="76" width="40" height="40" rx="4" fill="#edf5f8" stroke="#83b8c9" stroke-width="1.2"/>
+  <text x="496" y="103" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="23" fill="#202830">o</text>
+  <text x="496" y="150" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#607487">8</text>
+  <text x="496" y="191" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#1e5f74">1</text>
+  <rect x="524" y="76" width="40" height="40" rx="4" fill="#fff2f0" stroke="#d9a49c" stroke-width="1.2"/>
+  <text x="544" y="103" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="23" fill="#202830">m</text>
+  <text x="544" y="150" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#607487">9</text>
+  <text x="544" y="191" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#aa6a61">0</text>
+  <rect x="572" y="76" width="40" height="40" rx="4" fill="#fff2f0" stroke="#d9a49c" stroke-width="1.2"/>
+  <text x="592" y="103" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="23" fill="#202830">o</text>
+  <text x="592" y="150" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#607487">10</text>
+  <text x="592" y="191" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#aa6a61">1</text>
+  <rect x="620" y="76" width="40" height="40" rx="4" fill="#fff2f0" stroke="#d9a49c" stroke-width="1.2"/>
+  <text x="640" y="103" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="23" fill="#202830">o</text>
+  <text x="640" y="150" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#607487">11</text>
+  <text x="640" y="191" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#aa6a61">2</text>
+  <rect x="668" y="76" width="40" height="40" rx="4" fill="#e8f3f6" stroke="#1e5f74" stroke-width="1.2"/>
+  <text x="688" y="103" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="23" fill="#202830">o</text>
+  <text x="688" y="150" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#607487">12</text>
+  <rect x="716" y="76" width="40" height="40" rx="4" fill="#f6f8f9" stroke="#d8e0e5" stroke-width="1.2"/>
+  <text x="736" y="103" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="23" fill="#202830">f</text>
+  <text x="736" y="150" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#607487">13</text>
+  <rect x="764" y="76" width="40" height="40" rx="4" fill="#f6f8f9" stroke="#d8e0e5" stroke-width="1.2"/>
+  <text x="784" y="103" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="23" fill="#202830">u</text>
+  <text x="784" y="150" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#607487">14</text>
+  <rect x="812" y="76" width="40" height="40" rx="4" fill="#f6f8f9" stroke="#d8e0e5" stroke-width="1.2"/>
+  <text x="832" y="103" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="23" fill="#202830">n</text>
+  <text x="832" y="150" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#607487">15</text>
+  <rect x="522" y="70" width="140" height="133" rx="5" fill="none" stroke="#c84b31" stroke-width="1.8"/>
+  <path d="M532 81 L652 112 M652 81 L532 112" fill="none" stroke="#c84b31" stroke-width="2"/>
+  <text x="592" y="59" text-anchor="middle" font-family="Noto Sans CJK SC, sans-serif" font-size="16" fill="#c84b31">删除 moo</text>
+  <path d="M688 28 V69" fill="none" stroke="#33485c" stroke-width="1.8" marker-end="url(#arrow-dark)"/>
+  <text x="688" y="22" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#33485c">p1</text>
+  <path d="M496 203 V225 H688 V202" fill="none" stroke="#1e5f74" stroke-width="1.8" marker-end="url(#arrow-blue)"/>
+  <text x="592" y="248" text-anchor="middle" font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif" font-size="16" fill="#1e5f74">栈顶匹配位 1 + 1 = 2</text>
+  <rect x="662" y="170" width="52" height="34" rx="4" fill="#e8f3f6" stroke="#1e5f74" stroke-width="1.2"/>
+  <text x="688" y="192" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#1e5f74">p2=2</text>
+  <text x="776" y="218" font-family="Noto Sans CJK SC, sans-serif" font-size="16" fill="#33485c">p1 保持在 12</text>
+  <text x="520" y="288" text-anchor="end" font-family="Noto Sans CJK SC, sans-serif" font-size="16" fill="#33485c">模式串</text>
+  <text x="592" y="288" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="21" fill="#607487">m</text>
+  <text x="640" y="288" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="21" fill="#607487">o</text>
+  <text x="688" y="288" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="21" fill="#1e5f74">o</text>
+  <path d="M688 322 V295" fill="none" stroke="#1e5f74" stroke-width="1.7" marker-end="url(#arrow-blue)"/>
+  <text x="663" y="320" text-anchor="end" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#1e5f74">p2</text>
+</svg>

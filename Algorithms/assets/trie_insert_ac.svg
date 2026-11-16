@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="920" height="405" viewBox="0 0 920 405" role="img" aria-labelledby="title desc">
+  <ns0:defs><ns0:filter id="codex-white-label-bg" x="-12%" y="-20%" width="124%" height="140%"><ns0:feFlood flood-color="#ffffff" result="white" /><ns0:feGaussianBlur in="white" stdDeviation="2" result="soft" /><ns0:feComponentTransfer in="soft" result="rounded"><ns0:feFuncA type="discrete" tableValues="0 0 1 1" /></ns0:feComponentTransfer><ns0:feMerge><ns0:feMergeNode in="rounded" /><ns0:feMergeNode in="SourceGraphic" /></ns0:feMerge></ns0:filter></ns0:defs><ns0:title id="title">前缀树插入 ac 前后的计数变化</ns0:title>
+  <ns0:desc id="desc">左侧为已插入 acb、acc、cba 的前缀树；右侧再插入 ac；根节点、a 节点和 ac 节点的 pass 均增加一，ac 节点的 end 从零变为一；</ns0:desc>
+  <ns0:g font-family="Noto Sans CJK SC, Noto Sans, sans-serif" fill="#202830">
+    <ns0:text x="445" y="160" text-anchor="middle" font-size="15" fill="#1e5f74" filter="url(#codex-white-label-bg)">插入 "ac"</ns0:text>
+    <ns0:path d="M 416 186 H 474" stroke="#1e5f74" stroke-width="1.8" fill="none" />
+    <ns0:path d="M 474 186 L 466 182 L 466 190 Z" fill="#1e5f74" />
+    <ns0:text x="175" y="382" text-anchor="middle" font-size="16" fill="#607487" filter="url(#codex-white-label-bg)">已有 "acb"、"acc"、"cba"</ns0:text>
+  </ns0:g>
+  <ns0:g id="before" transform="translate(-15 -45)">
+    <ns0:path d="M 200 96 L 120 180" fill="none" stroke="#607487" stroke-width="1.6" stroke-linecap="round" />
+    <ns0:text x="151" y="133" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#607487" text-anchor="middle" filter="url(#codex-white-label-bg)">a</ns0:text>
+    <ns0:path d="M 200 96 L 280 180" fill="none" stroke="#607487" stroke-width="1.6" stroke-linecap="round" />
+    <ns0:text x="244" y="133" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#607487" text-anchor="middle" filter="url(#codex-white-label-bg)">c</ns0:text>
+    <ns0:path d="M 120 180 L 120 265" fill="none" stroke="#607487" stroke-width="1.6" stroke-linecap="round" />
+    <ns0:text x="134" y="230" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#607487" text-anchor="middle" filter="url(#codex-white-label-bg)">c</ns0:text>
+    <ns0:path d="M 280 180 L 280 265" fill="none" stroke="#607487" stroke-width="1.6" stroke-linecap="round" />
+    <ns0:text x="294" y="230" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#607487" text-anchor="middle" filter="url(#codex-white-label-bg)">b</ns0:text>
+    <ns0:path d="M 120 265 L 48 360" fill="none" stroke="#607487" stroke-width="1.6" stroke-linecap="round" />
+    <ns0:text x="72" y="315" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#607487" text-anchor="middle" filter="url(#codex-white-label-bg)">b</ns0:text>
+    <ns0:path d="M 120 265 L 160 360" fill="none" stroke="#607487" stroke-width="1.6" stroke-linecap="round" />
+    <ns0:text x="149" y="315" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#607487" text-anchor="middle" filter="url(#codex-white-label-bg)">c</ns0:text>
+    <ns0:path d="M 280 265 L 280 360" fill="none" stroke="#607487" stroke-width="1.6" stroke-linecap="round" />
+    <ns0:text x="294" y="315" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#607487" text-anchor="middle" filter="url(#codex-white-label-bg)">a</ns0:text>
+    <ns0:circle cx="200" cy="96" r="16" fill="#f5f7f8" stroke="#607487" stroke-width="1.6" />
+    <ns0:text x="200" y="101" font-family="Noto Sans CJK SC, sans-serif" font-size="13" font-weight="600" fill="#607487" text-anchor="middle">根</ns0:text>
+    <ns0:text x="222" y="93" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#202830" filter="url(#codex-white-label-bg)">pass=3</ns0:text>
+    <ns0:text x="222" y="111" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#607487" filter="url(#codex-white-label-bg)">end=0</ns0:text>
+    <ns0:circle cx="120" cy="180" r="16" fill="#f5f7f8" stroke="#607487" stroke-width="1.6" />
+    <ns0:text x="142" y="177" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#202830" filter="url(#codex-white-label-bg)">pass=2</ns0:text>
+    <ns0:text x="142" y="195" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#607487" filter="url(#codex-white-label-bg)">end=0</ns0:text>
+    <ns0:circle cx="280" cy="180" r="16" fill="#f5f7f8" stroke="#607487" stroke-width="1.6" />
+    <ns0:text x="302" y="177" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#202830" filter="url(#codex-white-label-bg)">pass=1</ns0:text>
+    <ns0:text x="302" y="195" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#607487" filter="url(#codex-white-label-bg)">end=0</ns0:text>
+    <ns0:circle cx="120" cy="265" r="16" fill="#f5f7f8" stroke="#607487" stroke-width="1.6" />
+    <ns0:text x="142" y="262" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#202830" filter="url(#codex-white-label-bg)">pass=2</ns0:text>
+    <ns0:text x="142" y="280" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#607487" filter="url(#codex-white-label-bg)">end=0</ns0:text>
+    <ns0:circle cx="280" cy="265" r="16" fill="#f5f7f8" stroke="#607487" stroke-width="1.6" />
+    <ns0:text x="302" y="262" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#202830" filter="url(#codex-white-label-bg)">pass=1</ns0:text>
+    <ns0:text x="302" y="280" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#607487" filter="url(#codex-white-label-bg)">end=0</ns0:text>
+    <ns0:circle cx="48" cy="360" r="16" fill="#f5f7f8" stroke="#607487" stroke-width="1.6" />
+    <ns0:text x="70" y="357" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#202830" filter="url(#codex-white-label-bg)">pass=1</ns0:text>
+    <ns0:text x="70" y="375" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#607487" filter="url(#codex-white-label-bg)">end=1</ns0:text>
+    <ns0:circle cx="160" cy="360" r="16" fill="#f5f7f8" stroke="#607487" stroke-width="1.6" />
+    <ns0:text x="182" y="357" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#202830" filter="url(#codex-white-label-bg)">pass=1</ns0:text>
+    <ns0:text x="182" y="375" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#607487" filter="url(#codex-white-label-bg)">end=1</ns0:text>
+    <ns0:circle cx="280" cy="360" r="16" fill="#f5f7f8" stroke="#607487" stroke-width="1.6" />
+    <ns0:text x="302" y="357" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#202830" filter="url(#codex-white-label-bg)">pass=1</ns0:text>
+    <ns0:text x="302" y="375" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#607487" filter="url(#codex-white-label-bg)">end=1</ns0:text>
+  </ns0:g>
+  <ns0:g id="after" transform="translate(-15 -45)">
+    <ns0:path d="M 670 96 L 590 180" fill="none" stroke="#1e5f74" stroke-width="2.2" stroke-linecap="round" />
+    <ns0:text x="621" y="133" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#1e5f74" text-anchor="middle" filter="url(#codex-white-label-bg)">a</ns0:text>
+    <ns0:path d="M 670 96 L 750 180" fill="none" stroke="#607487" stroke-width="1.6" stroke-linecap="round" />
+    <ns0:text x="714" y="133" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#607487" text-anchor="middle" filter="url(#codex-white-label-bg)">c</ns0:text>
+    <ns0:path d="M 590 180 L 590 265" fill="none" stroke="#1e5f74" stroke-width="2.2" stroke-linecap="round" />
+    <ns0:text x="604" y="230" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#1e5f74" text-anchor="middle" filter="url(#codex-white-label-bg)">c</ns0:text>
+    <ns0:path d="M 750 180 L 750 265" fill="none" stroke="#607487" stroke-width="1.6" stroke-linecap="round" />
+    <ns0:text x="764" y="230" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#607487" text-anchor="middle" filter="url(#codex-white-label-bg)">b</ns0:text>
+    <ns0:path d="M 590 265 L 518 360" fill="none" stroke="#607487" stroke-width="1.6" stroke-linecap="round" />
+    <ns0:text x="542" y="315" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#607487" text-anchor="middle" filter="url(#codex-white-label-bg)">b</ns0:text>
+    <ns0:path d="M 590 265 L 630 360" fill="none" stroke="#607487" stroke-width="1.6" stroke-linecap="round" />
+    <ns0:text x="619" y="315" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#607487" text-anchor="middle" filter="url(#codex-white-label-bg)">c</ns0:text>
+    <ns0:path d="M 750 265 L 750 360" fill="none" stroke="#607487" stroke-width="1.6" stroke-linecap="round" />
+    <ns0:text x="764" y="315" font-family="Noto Sans, sans-serif" font-size="17" font-weight="600" fill="#607487" text-anchor="middle" filter="url(#codex-white-label-bg)">a</ns0:text>
+    <ns0:circle cx="670" cy="96" r="16" fill="#eaf4f6" stroke="#1e5f74" stroke-width="2" />
+    <ns0:text x="670" y="101" font-family="Noto Sans CJK SC, sans-serif" font-size="13" font-weight="600" fill="#1e5f74" text-anchor="middle">根</ns0:text>
+    <ns0:text x="692" y="93" font-family="Noto Sans, sans-serif" font-size="15" font-weight="600" fill="#202830" filter="url(#codex-white-label-bg)">pass=4</ns0:text>
+    <ns0:text x="692" y="111" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#607487" filter="url(#codex-white-label-bg)">end=0</ns0:text>
+    <ns0:circle cx="590" cy="180" r="16" fill="#eaf4f6" stroke="#1e5f74" stroke-width="2" />
+    <ns0:text x="612" y="177" font-family="Noto Sans, sans-serif" font-size="15" font-weight="600" fill="#202830" filter="url(#codex-white-label-bg)">pass=3</ns0:text>
+    <ns0:text x="612" y="195" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#607487" filter="url(#codex-white-label-bg)">end=0</ns0:text>
+    <ns0:circle cx="750" cy="180" r="16" fill="#f5f7f8" stroke="#607487" stroke-width="1.6" />
+    <ns0:text x="772" y="177" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#202830" filter="url(#codex-white-label-bg)">pass=1</ns0:text>
+    <ns0:text x="772" y="195" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#607487" filter="url(#codex-white-label-bg)">end=0</ns0:text>
+    <ns0:circle cx="590" cy="265" r="16" fill="#eaf4f6" stroke="#1e5f74" stroke-width="2" />
+    <ns0:text x="612" y="262" font-family="Noto Sans, sans-serif" font-size="15" font-weight="600" fill="#202830" filter="url(#codex-white-label-bg)">pass=3</ns0:text>
+    <ns0:text x="612" y="280" font-family="Noto Sans, sans-serif" font-size="15" font-weight="600" fill="#1e5f74" filter="url(#codex-white-label-bg)">end=1</ns0:text>
+    <ns0:circle cx="750" cy="265" r="16" fill="#f5f7f8" stroke="#607487" stroke-width="1.6" />
+    <ns0:text x="772" y="262" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#202830" filter="url(#codex-white-label-bg)">pass=1</ns0:text>
+    <ns0:text x="772" y="280" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#607487" filter="url(#codex-white-label-bg)">end=0</ns0:text>
+    <ns0:circle cx="518" cy="360" r="16" fill="#f5f7f8" stroke="#607487" stroke-width="1.6" />
+    <ns0:text x="540" y="357" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#202830" filter="url(#codex-white-label-bg)">pass=1</ns0:text>
+    <ns0:text x="540" y="375" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#607487" filter="url(#codex-white-label-bg)">end=1</ns0:text>
+    <ns0:circle cx="630" cy="360" r="16" fill="#f5f7f8" stroke="#607487" stroke-width="1.6" />
+    <ns0:text x="652" y="357" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#202830" filter="url(#codex-white-label-bg)">pass=1</ns0:text>
+    <ns0:text x="652" y="375" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#607487" filter="url(#codex-white-label-bg)">end=1</ns0:text>
+    <ns0:circle cx="750" cy="360" r="16" fill="#f5f7f8" stroke="#607487" stroke-width="1.6" />
+    <ns0:text x="772" y="357" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#202830" filter="url(#codex-white-label-bg)">pass=1</ns0:text>
+    <ns0:text x="772" y="375" font-family="Noto Sans, sans-serif" font-size="15" font-weight="400" fill="#607487" filter="url(#codex-white-label-bg)">end=1</ns0:text>
+  </ns0:g>
+</ns0:svg>
